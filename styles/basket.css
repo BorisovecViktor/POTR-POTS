@@ -1,0 +1,11 @@
+.basket {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-image: url(../images/header/basket-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: transparent; }
+
+/*# sourceMappingURL=basket.css.map */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POTR POTS</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__top">
+        <a class="header__logo" href="#">potr pots</a>
+        <label for="header__mobile">
+          <div class="header__burger burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+        </label>
+        <input class="header__mobile" type="checkbox" name="header__mobile" id="header__mobile">
+
+        <div class="header__nav nav">
+          <label for="header__mobile">
+            <div class="header__burger--close close">
+              <span class="close__line"></span>
+              <span class="close__text">Close</span>
+            </div>
+          </label>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Basket</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Materials</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Message us</a>
+            </li>
+          </ul>
+        </div>
+        <button class="header__basket basket"></button>
+      </div>
+      <div class="header__photo">
+        <picture class="header__img">
+          <source srcset="./images/header/header-img-1440.jpg" media="(min-width: 1440px)">
+          <source srcset="./images/header/header-img-768.jpg" media="(min-width: 768px)">
+          <img src="./images/header/header-img.jpg" alt="cactus">
+        </picture>
+      </div>
+      <div class="header__intro intro">
+        <h1 class="intro__title">
+          POTR ~ Eco, self-<span class="intro__italic">watering,<br>origami</span>
+          plant
+          <span class="intro__italic">pots</span>
+        </h1>
+        <div class="intro__cost">
+          <span class="intro__price">$ 7,50</span>
+          <span class="intro__text">Get the second order<br>in half price</span>
+        </div>
+        <button class="intro__button button">Buy now</button>
+      </div>
+    </div>
+    <div class="header__decor-left decor-left">
+      <p class="decor-left__text">More about POTR POTS</p>
+    </div>
+    <div class="header__decor-right decor-right">
+      <p class="decor-right__text">potr pots</p>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__container">
+      <section class="for-whom">
+        <h2>For whom?</h2>
+      </section>
+    </div>
+  </main>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>

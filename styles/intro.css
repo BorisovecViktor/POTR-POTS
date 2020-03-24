@@ -1,0 +1,59 @@
+.intro__title {
+  font-size: 36px;
+  line-height: 36px; }
+  @media (min-width: 768px) {
+    .intro__title {
+      width: 460px;
+      font-size: 64px;
+      line-height: 64px;
+      z-index: 1;
+      -webkit-text-stroke: 0.67px #03839e; } }
+
+.intro__italic {
+  color: #03839e; }
+
+.intro__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 25px 0 20px;
+  font-weight: 600; }
+  @media (min-width: 768px) {
+    .intro__cost {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      margin: 0 0 44px; } }
+  @media (min-width: 1440px) {
+    .intro__cost {
+      margin: 0 0 49px; } }
+
+.intro__price {
+  font-size: 26px;
+  line-height: 32px;
+  color: #333; }
+  @media (min-width: 768px) {
+    .intro__price {
+      margin-right: 75px; } }
+
+.intro__text {
+  font-size: 14px; }
+  @media (min-width: 768px) {
+    .intro__text {
+      margin-right: 15px; } }
+
+@media (min-width: 768px) {
+  .intro__button {
+    display: block;
+    margin-left: auto;
+    margin-right: 34px; } }
+
+@media (min-width: 1440px) {
+  .intro__button {
+    margin-right: 80px; } }
+
+/*# sourceMappingURL=intro.css.map */

@@ -1,0 +1,66 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  margin-left: 0;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  @media (min-width: 1440px) {
+    .nav {
+      position: static;
+      -webkit-transform: none;
+              transform: none;
+      height: 100%; }
+      .nav label {
+        display: none; } }
+  .nav__list {
+    height: 100%;
+    padding: 138px 0 0 81px; }
+    @media (min-width: 1440px) {
+      .nav__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding: 0; } }
+  .nav__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .nav__item:not(:last-child) {
+    margin-bottom: 3px; }
+    @media (min-width: 1440px) {
+      .nav__item:not(:last-child) {
+        margin: 0 64px 0 0; } }
+  @media (min-width: 1440px) {
+    .nav__item:first-child {
+      display: none; } }
+  .nav__link {
+    width: 100%;
+    padding: 5px 10px;
+    color: #f8f8f8; }
+    @media (min-width: 1440px) {
+      .nav__link {
+        color: #4f4f4f;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#03839e), to(#03839e));
+        background-image: linear-gradient(#03839e, #03839e);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        background-size: 0 2px;
+        -webkit-transition: background-size 0.3s;
+        transition: background-size 0.3s; } }
+    .nav__link:hover, .nav__link:focus {
+      background-size: 100% 2px;
+      color: #03839e; }
+
+/*# sourceMappingURL=nav.css.map */
