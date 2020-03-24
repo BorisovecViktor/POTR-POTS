@@ -1,7 +1,14 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "nav";
+@import "basket";
+@import "intro";
+@import "burger";
+@import "button";
+@import "content";
 
 body {
-  background: $c-gray;
+  background: $c-greyLight;
 }
