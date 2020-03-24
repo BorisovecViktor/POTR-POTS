@@ -1,0 +1,73 @@
+@import "utils/vars";
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  margin-left: 0;
+  transform: translateX(200%);
+  transition: $transition;
+
+  @media (min-width: $desktops) {
+    position: static;
+    transform: none;
+    height: 100%;
+
+    & label {
+      display: none;
+    }
+  }
+
+  &__list {
+    height: 100%;
+    padding: 138px 0 0 81px;
+
+    @media (min-width: $desktops) {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 3px;
+
+    @media (min-width: $desktops) {
+      margin: 0 64px 0 0;
+    }
+  }
+
+  &__item:first-child {
+    @media (min-width: $desktops) {
+      display: none;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    padding: 5px 10px;
+    color: $c-greyLight;
+
+    @media (min-width: $desktops) {
+      color: $c-main;
+      background-image: linear-gradient($c-turquoise, $c-turquoise);
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 0 2px;
+      transition: background-size $transition;
+    }
+
+    &:hover,
+    &:focus {
+      background-size: 100% 2px;
+      color: $c-turquoise;
+    }
+  }
+}

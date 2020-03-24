@@ -1,0 +1,47 @@
+@import "utils/vars";
+
+.button {
+  position: relative;
+  width: 238px;
+  height: 48px;
+  padding: 0 101px 0 62px;
+  background-color: $c-yellow;
+  border: 1px solid $c-yellow;
+  box-sizing: border-box;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #121212;
+  text-transform: uppercase;
+
+  @media (min-width: $tablets) {
+    border: 1px solid $c-turquoise;
+    background-color: $c-greyLight;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $c-turquoise;
+      color: $c-greyLight;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-70%, -50%);
+    width: 26px;
+    height: 8px;
+    background-image: url(../images/header/arrow.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: $tablets) {
+    &:hover::after {
+      background-image: url(../images/header/arrow-white.png);
+    }
+  }
+}

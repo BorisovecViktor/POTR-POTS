@@ -1,0 +1,20 @@
+@import "utils/vars";
+
+.main {
+  &__container {
+    max-width: $mobile;
+    margin: 0 auto;
+    padding: 0 $wrap-gap;
+    box-sizing: border-box;
+
+    @media (min-width: $tablets) {
+      max-width: $tablets;
+      padding: 0 $wrap-gap-tablets;
+    }
+
+    @media (min-width: $desktops) {
+      max-width: $desktops;
+      padding: 0 $wrap-gap-desktops;
+    }
+  }
+}

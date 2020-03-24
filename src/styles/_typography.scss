@@ -1,3 +1,20 @@
+@import "utils/vars";
+
+html {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: $c-main;
+}
+
 h1 {
   @extend %h1;
+}
+
+h2 {
+  @extend %h2;
+}
+
+h3 {
+  @extend %h3;
 }
